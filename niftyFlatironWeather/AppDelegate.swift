@@ -13,9 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // ForecastAPIClient.generateResponseJSON(latitude: 37.8267, longitude: -122.4233, with: { repos in
+        //print(repos)
+//        })
+        
         return true
     }
 

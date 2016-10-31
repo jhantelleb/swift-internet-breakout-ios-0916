@@ -12,24 +12,28 @@ import CoreLocation
 
 class ViewController: UIViewController {
 
+    var store = ForecastDataStore.sharedInstance
+    
     let locationManager = CLLocationManager()
     var latitude = Double()
     var longitude = Double()
    
-    
+                
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLocationManager()
-    
-        
+        store.latitude = latitude
+        store.longitude = longitude
     }
-
-
-
+    
+    enum DailyHourly {
+        case hourly
+        case daily
+    }
 }
 
-
-extension ViewController: CLLocationManagerDelegate{
+extension ViewController: CLLocationManagerDelegate {
+    
     func setupLocationManager(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest

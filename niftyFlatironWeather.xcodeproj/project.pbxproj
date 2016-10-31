@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8360CA771DC39D58001832CF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360CA761DC39D58001832CF /* Secrets.swift */; };
+		8360CA7D1DC3BE48001832CF /* ForecastAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360CA7C1DC3BE48001832CF /* ForecastAPIClient.swift */; };
+		8360CA7F1DC3C324001832CF /* ForecastDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360CA7E1DC3C324001832CF /* ForecastDataStore.swift */; };
+		8360CA811DC3C3AD001832CF /* ForecastObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360CA801DC3C3AD001832CF /* ForecastObject.swift */; };
+		83B3B2501DC3DC4500453FFD /* DailyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B24F1DC3DC4500453FFD /* DailyTableViewController.swift */; };
+		83B3B2521DC3DC5900453FFD /* HourlyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B2511DC3DC5900453FFD /* HourlyTableViewController.swift */; };
+		83B3B2541DC505F600453FFD /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B2531DC505F600453FFD /* DailyTableViewCell.swift */; };
+		83B3B2561DC5061C00453FFD /* HourlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3B2551DC5061C00453FFD /* HourlyTableViewCell.swift */; };
 		8F0772751DC2FDEF0061A640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0772741DC2FDEF0061A640 /* AppDelegate.swift */; };
 		8F0772771DC2FDEF0061A640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0772761DC2FDEF0061A640 /* ViewController.swift */; };
 		8F07727A1DC2FDEF0061A640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0772781DC2FDEF0061A640 /* Main.storyboard */; };
@@ -15,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8360CA761DC39D58001832CF /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		8360CA7C1DC3BE48001832CF /* ForecastAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPIClient.swift; sourceTree = "<group>"; };
+		8360CA7E1DC3C324001832CF /* ForecastDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDataStore.swift; sourceTree = "<group>"; };
+		8360CA801DC3C3AD001832CF /* ForecastObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ForecastObject.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		83B3B24F1DC3DC4500453FFD /* DailyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTableViewController.swift; sourceTree = "<group>"; };
+		83B3B2511DC3DC5900453FFD /* HourlyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyTableViewController.swift; sourceTree = "<group>"; };
+		83B3B2531DC505F600453FFD /* DailyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
+		83B3B2551DC5061C00453FFD /* HourlyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyTableViewCell.swift; sourceTree = "<group>"; };
 		8F0772711DC2FDEF0061A640 /* niftyFlatironWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niftyFlatironWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0772741DC2FDEF0061A640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F0772761DC2FDEF0061A640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +70,20 @@
 		8F0772731DC2FDEF0061A640 /* niftyFlatironWeather */ = {
 			isa = PBXGroup;
 			children = (
-				8F0772741DC2FDEF0061A640 /* AppDelegate.swift */,
-				8F0772761DC2FDEF0061A640 /* ViewController.swift */,
 				8F0772781DC2FDEF0061A640 /* Main.storyboard */,
+				8360CA7C1DC3BE48001832CF /* ForecastAPIClient.swift */,
+				8360CA801DC3C3AD001832CF /* ForecastObject.swift */,
+				8360CA7E1DC3C324001832CF /* ForecastDataStore.swift */,
+				8F0772761DC2FDEF0061A640 /* ViewController.swift */,
+				83B3B24F1DC3DC4500453FFD /* DailyTableViewController.swift */,
+				83B3B2531DC505F600453FFD /* DailyTableViewCell.swift */,
+				83B3B2511DC3DC5900453FFD /* HourlyTableViewController.swift */,
+				83B3B2551DC5061C00453FFD /* HourlyTableViewCell.swift */,
+				8360CA761DC39D58001832CF /* Secrets.swift */,
 				8F07727B1DC2FDEF0061A640 /* Assets.xcassets */,
 				8F07727D1DC2FDEF0061A640 /* LaunchScreen.storyboard */,
 				8F0772801DC2FDEF0061A640 /* Info.plist */,
+				8F0772741DC2FDEF0061A640 /* AppDelegate.swift */,
 			);
 			path = niftyFlatironWeather;
 			sourceTree = "<group>";
@@ -137,8 +161,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B3B2541DC505F600453FFD /* DailyTableViewCell.swift in Sources */,
+				8360CA811DC3C3AD001832CF /* ForecastObject.swift in Sources */,
+				83B3B2561DC5061C00453FFD /* HourlyTableViewCell.swift in Sources */,
 				8F0772771DC2FDEF0061A640 /* ViewController.swift in Sources */,
+				8360CA771DC39D58001832CF /* Secrets.swift in Sources */,
+				83B3B2501DC3DC4500453FFD /* DailyTableViewController.swift in Sources */,
+				83B3B2521DC3DC5900453FFD /* HourlyTableViewController.swift in Sources */,
+				8360CA7D1DC3BE48001832CF /* ForecastAPIClient.swift in Sources */,
 				8F0772751DC2FDEF0061A640 /* AppDelegate.swift in Sources */,
+				8360CA7F1DC3C324001832CF /* ForecastDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +334,7 @@
 				8F0772851DC2FDEF0061A640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
